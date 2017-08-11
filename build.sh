@@ -5,7 +5,18 @@
 #------------------#
 
 # JDK 8 location
-JDK_LOCATION="/usr/lib/jvm/java-8-oracle"
+if [ ! -v JDK_LOCATION ]; then
+  if [ -d /usr/lib/jvm/default ]; then
+    JDK_LOCATION="/usr/lib/jvm/default"
+  elif [ -d /usr/lib/jvm/java-8-oracle]; then
+    JDK_LOCATION="/usr/lib/jvm/java-8-oracle"
+  elif [ -d /usr/lib/jvm/java-8-openjdk]; then
+    JDK_LOCATION="/usr/lib/jvm/java-8-openjdk"
+  else
+    echo "Cannot find jdk location."
+    exit 1
+  fi
+fi
 
 
 #-------------------#
