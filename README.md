@@ -25,6 +25,23 @@ which is loaded when our application starts. You can manually update that map
 by reflections after any modifications to maintain consistency. 
 However, it's not necessary if you don't want to use these variables from Java.
 
+#### Releases
+Releases are available [here](https://github.com/dzikoysk/LinuxEnv/releases). 
+You can also use maven (but you have to remember about the native library)
+
+```xml
+<dependency>
+    <groupId>net.dzikoysk</groupId>
+    <artifactId>linuxenv</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+<repository>
+    <id>panda-repo-releases</id>
+    <url>https://repo.panda-lang.org/releases</url>
+</repository>
+```
+
 #### Build
 * Linux Environment
 * JDK8

@@ -5,7 +5,7 @@
 #------------------#
 
 # JDK 8 location
-JDK_LOCATION = /usr/lib/jvm/java-8-oracle
+JDK_LOCATION="/usr/lib/jvm/java-8-oracle"
 
 
 #-------------------#
