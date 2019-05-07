@@ -37,7 +37,8 @@ You can also use maven (but you have to remember about the native library)
 </dependency>
 
 <repository>
-    <id>panda-repo-releases</id>
+    <id>panda-repo</id>
+    <name>Panda Repository</name>
     <url>https://repo.panda-lang.org/</url>
 </repository>
 ```
