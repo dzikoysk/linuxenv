@@ -37,7 +37,7 @@ You can also use maven (but you have to remember about the native library)
 </dependency>
 
 <repository>
-    <id>panda-repo</id>
+    <id>panda-repository</id>
     <name>Panda Repository</name>
     <url>https://repo.panda-lang.org/</url>
 </repository>
@@ -45,7 +45,7 @@ You can also use maven (but you have to remember about the native library)
 
 #### Build
 * Linux Environment
-* JDK8
+* JDK8+
 
 Default JDK8 location in the configuration section of `build.sh` file is set to:
 ```bash
